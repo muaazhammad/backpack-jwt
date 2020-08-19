@@ -21,4 +21,5 @@ Route::group([
         dd('heloo tt');
     });
 
+    Route::crud('product', 'ProductCrudController');
 }); // this should be the absolute last line of this file
