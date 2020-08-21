@@ -15,11 +15,10 @@ Route::group([
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
 
-
-
     Route::get('/tt', function () {
         dd('heloo tt');
     });
 
     Route::crud('product', 'ProductCrudController');
+    Route::crud('user', 'UserCrudController');
 }); // this should be the absolute last line of this file
