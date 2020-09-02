@@ -3,8 +3,11 @@
 
 => make cruds for 'user' and 'products'.
 
+
 => for users: 
+
 -------a default middleware 'checkIfAdmin' is used to protect admin routes.
+
 -------it checks boolian value of is_Admin column in users table
 
 
