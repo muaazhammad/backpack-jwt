@@ -13,12 +13,7 @@ Route::group([
         config('backpack.base.middleware_key', 'admin'),
     ],
     'namespace'  => 'App\Http\Controllers\Admin',
-], function () { // custom admin routes
-
-    Route::get('/tt', function () {
-        dd('heloo tt');
-    });
-
+], function () {
     Route::crud('product', 'ProductCrudController');
     Route::crud('user', 'UserCrudController');
 }); // this should be the absolute last line of this file
